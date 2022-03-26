@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
         head.style.top = '-50px'
         head_2.style.top = '-10px'
         head_2.style.background = '#889c1e'
-        logo.src = 'img/Logo_Vetor - white.png'
+        logo.src = 'Logo_Vetor - white.png'
         logo.style.top = '-20px'
 
     } else {
@@ -38,7 +38,7 @@ window.addEventListener('scroll', function() {
         head_2.style.top = '25px'
         head_2.style.background = 'rgba(255, 255, 255, 0.452)'
         head_2.style.color = 'rgb(0,0,0)'
-        logo.src = 'img/Logo_Vetor.png'
+        logo.src = 'Logo_Vetor.png'
 
     }
 
