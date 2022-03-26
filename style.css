@@ -1,0 +1,1610 @@
+* {
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #889c1e;
+    color: #fff;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@media (max-width: 1280px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body main {
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 605vh;
+        margin: auto;
+    }
+    #btn-whatsapp {
+        display: none;
+    }
+    div#video-institucional {
+        display: block;
+        background: #80960e;
+        padding: 0;
+        margin: 0;
+        height: 830px;
+        width: 100%;
+        top: 50px;
+    }
+    #video-institucional iframe {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        border-radius: 0;
+        height: 350px;
+    }
+    #video-institucional p {
+        width: 90%;
+        display: block;
+        float: left;
+        margin: 15px;
+    }
+    div#video-institucional h1 {
+        margin: 15px;
+        border: none;
+        float: left;
+        width: 90%;
+    }
+    .cabecalho {
+        display: none;
+    }
+    div.heads {
+        background-color: #7e9218;
+        top: 0;
+        width: 1000%;
+        height: 80px;
+        justify-items: center;
+        align-items: center;
+    }
+    div.heads img {
+        top: 210px;
+        margin: 10px;
+        z-index: 1;
+        top: 20px;
+    }
+    div.heads nav#menu {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: -4400px;
+        border-radius: 5px;
+        justify-items: center;
+        align-items: center;
+        height: 200vh;
+        background-color: #204204;
+        backdrop-filter: blur(55px);
+        padding: 20px;
+        width: 10%;
+        transition: 0.6s all ease-in-out;
+    }
+    div.heads nav#menu li {
+        display: list-item;
+        margin-top: 50px;
+        color: rgb(255, 255, 255);
+        list-style: none;
+        top: 150px;
+        font-size: 13pt;
+        left: 35%;
+    }
+    div.heads nav#menu ul {
+        width: 100%;
+        color: #000;
+        z-index: 1;
+    }
+    div.heads nav#menu li>ul {
+        background-color: #a6b49b;
+    }
+    div.heads nav#menu li>ul li {
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+    div.heads nav#menu i {
+        position: absolute;
+        display: block;
+        color: #fff;
+        font-size: 13pt;
+    }
+    div.heads label {
+        display: block;
+    }
+    div.heads input {
+        display: none;
+        z-index: 1;
+    }
+    div.heads label#l1,
+    label#l2 {
+        display: block;
+        color: #889c1e;
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    div.heads label#l2 {
+        display: block;
+        z-index: 1;
+    }
+    #chk1:checked div.heads~nav#menu {
+        left: -200%;
+    }
+    div.heads nav#menu i#times {
+        display: flex;
+        top: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 25pt;
+    }
+    div.content-area div {
+        display: block;
+        margin-top: 5px;
+        width: 70%;
+    }
+    div.content-area {
+        height: 660px;
+    }
+    div.content-area p {
+        top: -65px;
+        left: 150%;
+    }
+    div.div-trabalhos {
+        height: 420px;
+    }
+    div.div-trabalhos h1 {
+        color: rgb(255, 255, 255);
+        font-size: 16pt;
+        width: 80%;
+        top: 0;
+        float: left;
+    }
+    div.div-trabalhos p {
+        top: 30px;
+        width: 100%;
+    }
+    div.div-trabalhos div.conteudo {
+        width: 100%;
+        height: 320px;
+    }
+    div.div-trabalhos button {
+        display: block;
+        float: left;
+        top: 20px;
+        left: -50%;
+        width: 65%;
+    }
+    div.help {
+        width: 100%;
+        background-color: none;
+        height: 240vh;
+    }
+    div.help div.conteudo-2 {
+        width: 100%;
+    }
+    div.help div.conteudo-2 h1 {
+        width: 100%;
+    }
+    div.help div.conteudo-2 p {
+        width: 100%;
+        left: 0;
+    }
+    div.help div.conteudo-2 div#ico {
+        width: 100%;
+        display: block;
+    }
+    div.help div.conteudo-2 div#ico p {
+        width: 100%;
+        left: 0;
+        margin-top: -5px;
+        height: 250px;
+    }
+    div.neg {
+        position: relative;
+        top: 180px;
+        height: 440px;
+    }
+    div.neg div.conteudo-3 {
+        width: 100%;
+    }
+    div.neg div.conteudo-3 div.text {
+        width: 100%;
+        left: 0%;
+        margin: 5px;
+    }
+    div.neg div.conteudo-3 h1 {
+        font-size: 15pt;
+        width: 80%;
+    }
+    div.neg div.conteudo-3 p {
+        width: 100%;
+    }
+    div.neg button {
+        display: block;
+        float: left;
+        top: 100px;
+        left: 10%;
+        width: 75%;
+    }
+    div.clients {
+        position: relative;
+        top: 200px;
+    }
+    div.clients div.conteudo-4 {
+        width: 100%;
+    }
+    div.clients div.conteudo-4 p {
+        width: 100%;
+        left: 5%;
+    }
+    div.tech {
+        position: relative;
+        top: 200px;
+    }
+    div.tech div.conteudo-5 {
+        position: relative;
+        width: 100%;
+        top: 0px;
+    }
+    div.tech div.conteudo-5 h1 {
+        width: 100%;
+        font-size: 16pt;
+        text-align: center;
+        right: 0;
+    }
+    div.tech div.conteudo-5 div.text-div2 {
+        left: 5%;
+        width: 90%;
+    }
+    div.tech div.conteudo-5 p {
+        width: 90%;
+    }
+    div.tech button {
+        display: block;
+        float: left;
+        top: 190px;
+        left: 10%;
+        width: 75%;
+    }
+    footer.rodape img {
+        position: absolute;
+        display: block;
+        top: -200px;
+        left: 20%;
+        width: 120px;
+    }
+    footer.rodape div#all {
+        position: relative;
+        margin: 0px;
+        display: block;
+        top: 250px;
+        left: -2%;
+        width: 100%;
+        height: 320px;
+    }
+    footer.rodape div.icon-media {
+        position: relative;
+        margin: auto;
+        left: 0;
+        top: 160px;
+        width: 50%;
+    }
+    footer.rodape div.icon-media i {
+        position: relative;
+        display: inline-block;
+        margin: auto;
+    }
+    footer.rodape div.prop {
+        display: none;
+    }
+    div.cookies {
+        padding: 0;
+        height: 150px;
+        align-items: center;
+    }
+    div.cookies p {
+        position: relative;
+        top: -10px;
+        font-size: 12pt;
+        margin: 5px;
+        left: 0;
+        width: 50%;
+    }
+    div.cookies button {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 5pt;
+    }
+}
+
+@media(min-width: 1800px) {
+    body main {
+        position: relative;
+        width: 2500px;
+        margin: auto;
+        height: 100vh;
+    }
+    div.heads {
+        width: 2000px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    /*.heads nav#menu{
+        position: relative;
+        top: -150px;
+        font-size: 13pt;
+    }*/
+    .heads {
+        position: relative;
+    }
+    .heads img {
+        display: block;
+        left: 800%;
+    }
+    .heads nav#menu {
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+    div#video-institucional {
+        width: 45%;
+    }
+    div.help {
+        background: #fff;
+        top: 100px;
+        height: 720px;
+    }
+    div.neg {
+        top: -100px;
+    }
+    div.div-trabalhos {
+        position: relative;
+        top: 100px;
+    }
+    div.clients {
+        top: -100px;
+    }
+    div.tech {
+        top: -100px;
+    }
+    div.content-area div#images-top {
+        padding: 0;
+        width: 50%;
+        left: 0;
+        top: 30px;
+        margin: auto;
+    }
+    footer.rodape {
+        top: -100px;
+    }
+    div.cookies {
+        width: 100%;
+    }
+}
+
+#chk2:checked~nav#menu {
+    left: -200%;
+}
+
+#chk1:checked~nav#menu {
+    left: 0%;
+}
+
+a {
+    height: 0;
+    color: #000;
+}
+
+label#l1,
+label#l2 {
+    display: none;
+    width: 20%;
+    padding: 2px;
+    margin: 0;
+    margin: auto;
+    font-size: 16pt;
+    text-align: center;
+}
+
+label#l1 {
+    z-index: -1;
+    background-color: #889c1e;
+    width: 80px;
+    color: #fff;
+}
+
+label#l2 {
+    position: relative;
+    margin: auto;
+    top: 100px;
+    width: 20%;
+    left: 0%;
+}
+
+label p {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transform: translate(20%, 0%);
+}
+
+.heads input {
+    display: none;
+}
+
+main {
+    position: relative;
+    background: none;
+    padding: 0px;
+    height: 480vh;
+    top: -50px;
+}
+
+body {
+    margin: 0;
+    height: 0;
+    transition: 0.6s all ease-in-out;
+}
+
+.cabecalho {
+    position: fixed;
+    background: #889c1e;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.6s all ease-in-out;
+}
+
+.cabecalho p#certificado {
+    position: absolute;
+    left: 100%;
+    transform: translate(100%, 30%);
+    cursor: pointer;
+}
+
+.cabecalho p {
+    position: relative;
+    right: 20%;
+    font-size: 10pt;
+    top: -5px;
+    width: 20%;
+    text-align: center;
+}
+
+#icones {
+    position: relative;
+    width: 10%;
+    top: -2px;
+    right: 12%;
+    margin-right: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 8pt;
+    float: right;
+}
+
+#icones i {
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#comunicacao {
+    position: relative;
+    color: rgb(255, 255, 255);
+    float: left;
+    top: -5px;
+    left: 15%;
+}
+
+#comunicacao p {
+    color: rgb(255, 255, 255);
+    width: 150%;
+}
+
+#email {
+    position: absolute;
+    top: 0px;
+    left: -80%;
+    width: 10%;
+}
+
+#email i {
+    margin-right: 10px;
+}
+
+#telefone {
+    top: 0px;
+    left: 180px;
+}
+
+#telefone i {
+    margin-right: 10px;
+}
+
+.heads {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    left: 0;
+    padding: 30px;
+    top: 25px;
+    z-index: 1;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.452);
+    backdrop-filter: blur(15px);
+    transition: 0.6s all ease-in-out;
+}
+
+.heads img {
+    position: relative;
+    width: 120px;
+    left: 80%;
+    top: -25px;
+}
+
+
+/*menu*/
+
+nav#menu {
+    position: relative;
+    display: flex;
+    left: 20%;
+}
+
+nav#menu li a {
+    color: #889c1e;
+}
+
+nav#menu ul {
+    width: 650px;
+}
+
+nav#menu li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 0%;
+    border-radius: 16px;
+    padding: 5px;
+    width: 130px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+nav#menu li#work {
+    width: 150px;
+}
+
+nav#menu li>ul {
+    display: none;
+    position: absolute;
+}
+
+nav#menu li:hover {
+    background-color: #889c1e;
+    color: rgb(255, 255, 255);
+}
+
+nav#menu li:hover>ul {
+    position: absolute;
+    top: 30px;
+    left: -30%;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(89, 156, 33);
+    width: 200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.089);
+    padding: 5px;
+}
+
+nav#menu li:hover>ul li {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+    border-radius: 5px;
+}
+
+nav#menu li#budgets {
+    position: absolute;
+    background: #889c1e;
+    padding: 8px;
+    width: 150px;
+    left: 90%;
+    transform: translate(100%, -10%);
+    color: #fff;
+}
+
+nav#menu li#budgets:hover {
+    background: #879c1ec9;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#menu i {
+    display: none;
+}
+
+#menu p {
+    display: none;
+}
+
+div.new li#budgets {
+    background-color: #fff;
+    color: #889c1e;
+}
+
+main #btn-whatsapp {
+    position: relative;
+    z-index: 1;
+}
+
+main #btn-whatsapp img {
+    position: fixed;
+    width: 2%;
+    top: 90%;
+    left: 95%;
+}
+
+#btn-whatsapp img:hover {
+    animation: vibration 0.1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes vibration {
+    0% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 5px;
+    }
+    50% {
+        margin-left: 0;
+    }
+    75% {
+        margin-left: -10px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+#solucao {
+    position: relative;
+    background-color: #889c1e;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+.content-area {
+    position: relative;
+    margin: 0px;
+    top: 100px;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+    background: #889c1e;
+    color: #000;
+    background-attachment: fixed;
+    background-position-y: center;
+    height: 320px;
+}
+
+.content-area h1 {
+    align-items: center;
+    justify-items: center;
+}
+
+.content-area div {
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.content-area p {
+    position: relative;
+    top: 130px;
+    left: -45%;
+    float: left;
+    color: #fff;
+    width: 150px;
+}
+
+#images-top {
+    position: relative;
+    top: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+#image-1 {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-1 img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-1 img:hover {
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+#image-2 {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-2 img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-2 img:hover {
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+#image-3 {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-3 img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-3 img:hover {
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+#image-4 {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-4 img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-4 img:hover {
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+#video-institucional {
+    position: relative;
+    margin: auto;
+    top: 90px;
+    width: 70%;
+    display: flex;
+    background: url(../img/capa-trabalho.png);
+    color: #fff;
+    font-size: 12pt;
+    border-radius: 5px;
+    padding: 26px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.247);
+}
+
+#video-institucional iframe {
+    border-radius: 5px;
+}
+
+#video-institucional h1,
+p {
+    position: relative;
+    width: 90%;
+    margin-right: 20px;
+    transform: translateY(20%);
+    float: right;
+    line-height: 25px;
+}
+
+#video-institucional h1 {
+    line-height: 45px;
+}
+
+#video-institucional h1 {
+    border-right: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.slider {
+    position: relative;
+    top: 80px;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(5, 5, 5);
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    opacity: 50%;
+}
+
+.slide input[type="radio"] {
+    position: relative;
+    z-index: 1000;
+    top: 50px;
+    display: block;
+}
+
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.manual-btn {
+    border: 2px solid rgb(81, 255, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:hover {
+    background: rgb(81, 255, 0);
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: rgb(89, 156, 33);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: rgb(89, 156, 33);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: rgb(89, 156, 33);
+}
+
+
+/*fomatation text slide*/
+
+.first h1 {
+    position: relative;
+    top: -380px;
+    width: 50%;
+    left: 20%;
+    font-size: 50pt;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.first button {
+    position: relative;
+    top: -350px;
+    padding: 13px;
+    border: none;
+    border-radius: 26px;
+    left: 20%;
+    width: 160px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #889c1e;
+    color: #fff;
+    transition: 0.6s all ease-in-out;
+}
+
+.first button:hover {
+    background-color: #879c1ec9;
+}
+
+.slide h1 {
+    position: relative;
+    top: -380px;
+    width: 50%;
+    left: 20%;
+    font-size: 50pt;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slide button {
+    position: relative;
+    top: -350px;
+    padding: 13px;
+    border: none;
+    border-radius: 26px;
+    left: 20%;
+    width: 160px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #889c1e;
+    color: #fff;
+    transition: 0.6s all ease-in-out;
+}
+
+.slide button:hover {
+    background-color: #879c1ec9;
+}
+
+.slide-2 h1 {
+    position: relative;
+    top: -380px;
+    width: 50%;
+    left: 20%;
+    font-size: 50pt;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slide-2 button {
+    position: relative;
+    top: -350px;
+    padding: 13px;
+    border: none;
+    border-radius: 26px;
+    left: 20%;
+    width: 160px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #889c1e;
+    color: #fff;
+    transition: 0.6s all ease-in-out;
+}
+
+.slide-2 button:hover {
+    background-color: #879c1ec9;
+}
+
+.slide-2 img {
+    height: 500px;
+    width: 200%;
+    opacity: 50%;
+}
+
+
+/*loading*/
+
+.div-trabalhos {
+    position: relative;
+    text-align: left;
+    top: 100px;
+    width: 100%;
+    padding: 10px;
+    height: 420px;
+    background: url(../img/capa-trabalho.png);
+    color: #fff;
+}
+
+.div-trabalhos h1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 10px;
+    top: 50px;
+    margin: 0;
+}
+
+.div-trabalhos p {
+    position: relative;
+    margin-left: 100px;
+    top: 130px;
+    width: 60%;
+    float: left;
+    margin: 0px;
+}
+
+.div-trabalhos button {
+    position: relative;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: #889c1e;
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 100px;
+    transform: translate(100%, 150%);
+    width: 30%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.div-trabalhos button:hover {
+    background: #879c1ec9;
+}
+
+.div-trabalhos .conteudo {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.help {
+    position: relative;
+    padding: 30px;
+    top: 100px;
+    height: 550px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    color: #000;
+    background: none;
+}
+
+.help #ico {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: none;
+    top: 50px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.help h1 {
+    width: 50%;
+    margin: auto;
+}
+
+.help #texto-help {
+    width: 50%;
+    margin: auto;
+}
+
+.help #ico i {
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 0;
+    top: -50px;
+    color: #889c1e;
+    border-radius: 100%;
+    border: 1px solid #889c1e;
+    padding: 25px;
+    font-size: 40pt;
+    transition: 0.6s all ease-in-out;
+}
+
+.help #ico i:hover {
+    border-color: rgb(0, 167, 22);
+    color: rgb(73, 119, 0);
+}
+
+.help #ico h1 {
+    position: relative;
+    font-size: 13pt;
+    margin-top: -10px;
+    width: 80%;
+}
+
+.help #ico p {
+    display: block;
+}
+
+.conteudo-2 {
+    width: 90%;
+    margin: auto;
+}
+
+.neg {
+    position: relative;
+    top: 150px;
+    color: #000;
+    background: url(../img/capa-trabalho.png);
+    height: 450px;
+}
+
+.neg h1 {
+    width: 65%;
+    color: #fff;
+}
+
+.neg .text {
+    position: relative;
+    top: 100px;
+    left: 0%;
+}
+
+.neg .text p {
+    width: 60%;
+    color: #fff;
+    left: 1;
+    float: left;
+}
+
+.neg button {
+    position: relative;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: #889c1e;
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 50px;
+    left: 15%;
+    width: 20%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.neg button:hover {
+    background: #879c1ec9;
+}
+
+.conteudo-3 {
+    width: 50%;
+    margin: auto;
+}
+
+.clients {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    height: 420px;
+    background: #879c1e;
+    top: 150px;
+    overflow: hidden;
+}
+
+.clients p::selection {
+    background-color: #204204;
+}
+
+.clients h1::selection {
+    background-color: #204204;
+}
+
+.clients .text-div {
+    position: relative;
+    top: 70px;
+}
+
+.clients .text-div p {
+    width: 30%;
+    left: -35%
+}
+
+.clients .im {
+    position: relative;
+    width: 200%;
+    top: 100px;
+    height: 220px;
+    animation: anima 60s infinite;
+}
+
+@keyframes anima {
+    0% {
+        transform: translate3d(-3270.5px, 0px, 0px);
+        transition: all 2.7s ease 0s;
+        width: 10903px;
+    }
+    100% {
+        transform: translate3d(-6541px, 0px, 0px);
+        transition: all 2.7s ease 0s;
+        width: 10903px;
+    }
+}
+
+.clients .im img {
+    position: relative;
+    top: 0px;
+    margin: 60px;
+    cursor: pointer;
+    margin-left: 400px;
+    scroll-behavior: smooth;
+    transition: 0.6s all ease-in-out;
+}
+
+.clients .im {
+    position: relative;
+    display: flex;
+}
+
+.clients img#arj {
+    display: flex;
+    width: 53.44px;
+    height: 82.64px;
+}
+
+.clients img#suz {
+    display: flex;
+    width: 79.85px;
+    height: 69.87px;
+}
+
+.clients img#cts {
+    display: flex;
+    width: 86.39px;
+    height: 33.7px;
+}
+
+.clients img#ryc {
+    display: flex;
+    width: 52.71px;
+    height: 89.34px;
+}
+
+.clients img#ss {
+    display: flex;
+    width: 95.72px;
+    height: 15.19px;
+}
+
+.clients img#mb {
+    display: flex;
+    width: 95.12px;
+    height: 95.12px;
+}
+
+.clients img#gr {
+    display: flex;
+    width: 79.77px;
+    height: 79.77px;
+}
+
+.clients img#hsn {
+    display: flex;
+    width: 165.9px;
+    height: 44.7px;
+}
+
+.conteudo-4 {
+    width: 100%;
+    margin: auto;
+}
+
+.tech {
+    position: relative;
+    top: 150px;
+    background: url(../img/capa-trabalho.png);
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tech .text-div2 {
+    position: relative;
+    top: -30px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+
+.tech button {
+    position: relative;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: #879c1e;
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    left: -50%;
+    transform: translate(0%, 200%);
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.tech button:hover {
+    background: #879c1ec9;
+}
+
+.rodape {
+    position: relative;
+    background-color: #303030;
+    top: 150px;
+    height: 500px;
+}
+
+.rodape img {
+    position: relative;
+    top: 100px;
+    right: 100px;
+    width: 200px;
+}
+
+#all {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    background: #303030;
+    height: 320px;
+    padding: 20px;
+}
+
+#all p {
+    position: relative;
+    top: -100px;
+    left: 10%;
+    color: #fff;
+    margin: 10px;
+}
+
+.icon-media {
+    position: relative;
+    width: 50%;
+    top: 50px;
+    left: 35%;
+}
+
+.icon-media i {
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #424242bd;
+    margin: 10px;
+    transition: 1s;
+}
+
+.icon-media i:hover {
+    background-color: #fff;
+    color: #303030;
+    transform: scale(2);
+}
+
+.prop {
+    position: absolute;
+    left: 65%;
+    margin: 50px;
+    top: -30px;
+    width: 30%;
+    color: #fff;
+    height: 420px;
+}
+
+.prop #text3 {
+    color: #8060ef;
+}
+
+.prop p#sub-titulo {
+    float: left;
+    left: 0;
+}
+
+.prop input,
+textarea {
+    position: relative;
+    top: 10px;
+    left: -08%;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border-radius: 10px;
+    border: 0;
+}
+
+.prop textarea {
+    top: 0px;
+    outline: none;
+    height: 100px;
+}
+
+.prop button {
+    position: absolute;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: #879c1e;
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 380px;
+    left: 0;
+    width: 20%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.prop button[type="reset"] {
+    left: 25%;
+}
+
+.prop button:hover {
+    background-color: #879c1ec9;
+}
+
+.prop .finish p {
+    position: relative;
+    margin: 0;
+    top: -100px;
+    width: 50%;
+}
+
+
+/*barra de cookies*/
+
+.cookies {
+    position: fixed;
+    display: flex;
+    bottom: 00px;
+    width: 100%;
+    transform: translate(0%);
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 15pt;
+    z-index: 1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.561);
+    transition: 0.6s all ease-in-out;
+}
+
+.cookies a {
+    color: #000;
+}
+
+.cookies button#all-recuse {
+    border: 1px solid #000;
+    background: none;
+    padding: 5px;
+    margin: 10px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.cookies button#all-recuse:hover {
+    background-color: #889c1e;
+    color: #fff;
+}
+
+.cookies button#accept:hover {
+    background-color: #889c1e;
+}
+
+.cookies button#accept {
+    border: none;
+    outline: none;
+    width: 10%;
+    padding: 5px;
+    margin: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cookies label {
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+#button_top {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgba(104, 122, 3, 0.541);
+    bottom: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+}
+
+#button_top:hover {
+    background-color: rgb(104, 122, 3);
+}
+
+#button_top img {
+    display: flex;
+    transform: rotate(180deg);
+    width: 50%;
+}
